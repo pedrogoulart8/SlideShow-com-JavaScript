@@ -50,7 +50,7 @@ const previous = () => {
 const next = () => {
 
     //Enviar o ultimo item para ficar antes do primeiro item e depois ler novamente a lista//
-    const lastItem = items[items.lenght - 1]
+    const lastItem = items[items.length - 1]
     containerItems.insertBefore(lastItem, items[0])
     items = document.querySelectorAll('.item')
 
@@ -58,4 +58,3 @@ const next = () => {
 
 document.querySelector('#previous').addEventListener('click', previous)
 document.querySelector('#next').addEventListener('click', next)
-
